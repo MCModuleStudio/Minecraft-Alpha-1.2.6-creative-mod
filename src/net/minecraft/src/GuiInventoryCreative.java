@@ -4,11 +4,11 @@ import org.lwjgl.opengl.GL11;
 import org.lwjgl.input.Mouse;
 
 public class GuiInventoryCreative extends GuiInventory {
-	InventorySelect inv1;
+	InventoryItemSelection inv1;
 	IInventory inv2;
 	public GuiInventoryCreative(IInventory inv) {
 		super(inv,new ItemStack[4]);
-		inv1=new InventorySelect();
+		inv1=new InventoryItemSelection();
 		inv2=inv;
 		inventorySlots.clear();
 		xSize=198;
